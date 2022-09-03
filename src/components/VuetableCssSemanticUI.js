@@ -10,7 +10,7 @@ export default {
     ascendingClass: 'sorted-asc',
     descendingClass: 'sorted-desc',
     sortableIcon: 'grey sort icon',
-    handleIcon: 'grey sidebar icon',
+    handleIcon: 'grey sidebar icon'
   },
 
   pagination: {
@@ -26,11 +26,11 @@ export default {
       first: 'angle double left icon',
       prev: 'left chevron icon',
       next: 'right chevron icon',
-      last: 'angle double right icon',
+      last: 'angle double right icon'
     }
   },
 
   paginationInfo: {
-    infoClass: 'left floated left aligned six wide column',
+    infoClass: 'left floated left aligned six wide column'
   }
 }

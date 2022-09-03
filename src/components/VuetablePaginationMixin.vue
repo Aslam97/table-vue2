@@ -5,13 +5,13 @@ export default {
   props: {
     css: {
       type: Object,
-      default () {
+      default() {
         return {}
       }
     },
     onEachSide: {
       type: Number,
-      default () {
+      default() {
         return 2
       }
     },
@@ -20,7 +20,7 @@ export default {
       default: 1
     }
   },
-  data: function() {
+  data: function () {
     return {
       eventPrefix: 'vuetable-pagination:',
       tablePagination: null,
@@ -28,59 +28,63 @@ export default {
     }
   },
   computed: {
-    totalPage () {
+    totalPage() {
       return this.tablePagination === null
         ? 0
         : this.tablePagination.last_page - this.firstPage + 1
     },
-    lastPage () {
-      return this.tablePagination === null
-        ? 0
-        : this.tablePagination.last_page
+    lastPage() {
+      return this.tablePagination === null ? 0 : this.tablePagination.last_page
     },
-    isOnFirstPage () {
+    isOnFirstPage() {
       return this.tablePagination === null
         ? false
         : this.tablePagination.current_page === this.firstPage
     },
-    isOnLastPage () {
+    isOnLastPage() {
       return this.tablePagination === null
         ? false
         : this.tablePagination.current_page === this.lastPage
     },
-    notEnoughPages () {
-      return this.totalPage < (this.onEachSide * 2) + 4
+    notEnoughPages() {
+      return this.totalPage < this.onEachSide * 2 + 4
     },
-    windowSize () {
-      return this.onEachSide * 2 +1;
+    windowSize() {
+      return this.onEachSide * 2 + 1
     },
-    windowStart () {
-      if (!this.tablePagination || this.tablePagination.current_page <= this.onEachSide) {
+    windowStart() {
+      if (
+        !this.tablePagination ||
+        this.tablePagination.current_page <= this.onEachSide
+      ) {
         return 1
-      } else if (this.tablePagination.current_page >= (this.totalPage - this.onEachSide)) {
+      } else if (
+        this.tablePagination.current_page >=
+        this.totalPage - this.onEachSide
+      ) {
         return this.totalPage - this.onEachSide * 2
       }
 
       return this.tablePagination.current_page - this.onEachSide
-    },
+    }
   },
-  created () {
+  created() {
     this.mergeCss()
   },
   methods: {
-    mergeCss () {
-      this.$_css = {...CssSemanticUI.pagination, ...this.css}
+    mergeCss() {
+      this.$_css = { ...CssSemanticUI.pagination, ...this.css }
     },
-    loadPage (page) {
+    loadPage(page) {
       this.$emit(this.eventPrefix + 'change-page', page)
     },
-    isCurrentPage (page) {
+    isCurrentPage(page) {
       return page === this.tablePagination.current_page
     },
-    setPaginationData (tablePagination) {
+    setPaginationData(tablePagination) {
       this.tablePagination = tablePagination
     },
-    resetData () {
+    resetData() {
       this.tablePagination = null
     }
   }

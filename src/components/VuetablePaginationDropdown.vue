@@ -1,16 +1,29 @@
 <template>
   <div :class="[$_css.wrapperClass]">
-    <a @click="loadPage('prev')"
-       :class="[$_css.linkClass, {[$_css.disabledClass] : isOnFirstPage}]">
+    <a
+      @click="loadPage('prev')"
+      :class="[$_css.linkClass, { [$_css.disabledClass]: isOnFirstPage }]"
+    >
       <i :class="$_css.icons.prev"></i>
     </a>
-    <select :class="['vuetable-pagination-dropdown', $_css.dropdownClass]" @change="loadPage($event.target.selectedIndex+firstPage)">
-      <option v-for="(n, i) in totalPage" :key="n" :class="[$_css.pageClass]" :value="i+firstPage" :selected="isCurrentPage(i+firstPage)">
-        {{pageText}} {{n}}
+    <select
+      :class="['vuetable-pagination-dropdown', $_css.dropdownClass]"
+      @change="loadPage($event.target.selectedIndex + firstPage)"
+    >
+      <option
+        v-for="(n, i) in totalPage"
+        :key="n"
+        :class="[$_css.pageClass]"
+        :value="i + firstPage"
+        :selected="isCurrentPage(i + firstPage)"
+      >
+        {{ pageText }} {{ n }}
       </option>
     </select>
-    <a @click="loadPage('next')"
-       :class="[$_css.linkClass, {[$_css.disabledClass] : isOnLastPage}]">
+    <a
+      @click="loadPage('next')"
+      :class="[$_css.linkClass, { [$_css.disabledClass]: isOnLastPage }]"
+    >
       <i :class="$_css.icons.next"></i>
     </a>
   </div>
@@ -24,19 +37,19 @@ export default {
   props: {
     pageText: {
       type: String,
-      default () {
+      default() {
         return 'Page'
       }
     }
   },
   methods: {
-    registerEvents () {
-      this.$on('vuetable:pagination-data', (tablePagination) => {
+    registerEvents() {
+      this.$on('vuetable:pagination-data', tablePagination => {
         this.setPaginationData(tablePagination)
       })
     }
   },
-  created () {
+  created() {
     this.registerEvents()
   }
 }

@@ -1,9 +1,7 @@
 <template>
-  <th v-if="isHeader" 
-    class="vuetable-th-component-handle"
-    v-html="title"
-  ></th>
-  <td v-else 
+  <th v-if="isHeader" class="vuetable-th-component-handle" v-html="title"></th>
+  <td
+    v-else
     class="vuetable-td-component-handle"
     v-html="renderIconTag(['handle-icon', css.handleIcon])"
   ></td>
@@ -25,7 +23,7 @@ export default {
 
   methods: {
     renderIconTag(classes, options = '') {
-      return typeof(this.css.renderIcon) === 'undefined'
+      return typeof this.css.renderIcon === 'undefined'
         ? `<i class="${classes.join(' ')}" ${options}></i>`
         : this.css.renderIcon(classes, options)
     }

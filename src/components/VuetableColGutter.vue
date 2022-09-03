@@ -1,6 +1,6 @@
 <template>
   <th
-    :style="{width: vuetable.scrollBarWidth}" 
+    :style="{ width: vuetable.scrollBarWidth }"
     class="vuetable-th-gutter"
   ></th>
 </template>
@@ -14,14 +14,13 @@ export default {
       return this.$parent
     }
   }
-  
 }
 </script>
 
 <style>
-  .vuetable-th-gutter {
-    padding: 0 !important;
-    border-left: none  !important;
-    border-right: none  !important;
-  }
+.vuetable-th-gutter {
+  padding: 0 !important;
+  border-left: none !important;
+  border-right: none !important;
+}
 </style>

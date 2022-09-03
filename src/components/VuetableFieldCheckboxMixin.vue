@@ -6,7 +6,11 @@ export default {
 
   methods: {
     toggleCheckbox(dataItem, event) {
-      this.vuetable.onCheckboxToggled(event.target.checked, this.rowField.name, dataItem)
+      this.vuetable.onCheckboxToggled(
+        event.target.checked,
+        this.rowField.name,
+        dataItem
+      )
     },
 
     toggleAllCheckbox(event) {
@@ -18,11 +22,13 @@ export default {
     },
 
     isAllItemsInCurrentPageSelected() {
-      if (! this.vuetable.tableData) return 
+      if (!this.vuetable.tableData) return
 
       let idColumn = this.vuetable.trackBy
       let checkbox = this.$el.querySelector('input[type=checkbox]')
-      let selected = this.vuetable.tableData.filter( (item) => this.vuetable.isSelectedRow(item[idColumn]) )
+      let selected = this.vuetable.tableData.filter(item =>
+        this.vuetable.isSelectedRow(item[idColumn])
+      )
 
       // count == 0, clear the checkbox
       if (selected.length <= 0) {
@@ -38,7 +44,7 @@ export default {
       else {
         checkbox.indeterminate = false
         return true
-      }            
+      }
     }
   }
 }

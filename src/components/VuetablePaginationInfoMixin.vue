@@ -12,7 +12,7 @@ export default {
     infoTemplate: {
       type: String,
       default() {
-        return "Displaying {from} to {to} of {total} items"
+        return 'Displaying {from} to {to} of {total} items'
       }
     },
     noDataTemplate: {
@@ -20,16 +20,16 @@ export default {
       default() {
         return 'No relevant data'
       }
-    },
+    }
   },
-  data: function() {
+  data: function () {
     return {
       tablePagination: null,
       $_css: {}
     }
   },
   computed: {
-    paginationInfo () {
+    paginationInfo() {
       if (this.tablePagination == null || this.tablePagination.total == 0) {
         return this.noDataTemplate
       }
@@ -38,21 +38,21 @@ export default {
         .replace('{from}', this.tablePagination.from || 0)
         .replace('{to}', this.tablePagination.to || 0)
         .replace('{total}', this.tablePagination.total || 0)
-    },
+    }
   },
-  created () {
+  created() {
     this.mergeCss()
   },
   methods: {
-    mergeCss () {
-      this.$_css = {...CssSemanticUI.paginationInfo, ...this.css}
+    mergeCss() {
+      this.$_css = { ...CssSemanticUI.paginationInfo, ...this.css }
     },
-    setPaginationData (tablePagination) {
+    setPaginationData(tablePagination) {
       this.tablePagination = tablePagination
     },
-    resetData () {
+    resetData() {
       this.tablePagination = null
     }
-  },
+  }
 }
 </script>

@@ -1,9 +1,11 @@
 <template>
-  <th v-if="isHeader"
+  <th
+    v-if="isHeader"
     class="vuetable-th-component-sequence"
     v-html="title"
   ></th>
-  <td v-else
+  <td
+    v-else
     class="vuetable-td-component-sequence"
     v-html="renderSequence()"
   ></td>
@@ -14,7 +16,7 @@ import VuetableFieldMixin from './VuetableFieldMixin.vue'
 
 export default {
   name: 'vuetable-field-sequence',
-  
+
   mixins: [VuetableFieldMixin],
 
   methods: {
