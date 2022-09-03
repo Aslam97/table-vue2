@@ -2,7 +2,7 @@
   "name": "table-vue2",
   "version": "1.0.0",
   "description": "Datatable component for Vue 2.x",
-  "main": "dist/table-vue2.js",
+  "main": "dist/table-vue2.common.js",
   "license": "MIT",
   "author": "Aslam <iupin5212@gmail.com>",
   "repository": {
@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "dev": "vue-cli-service serve try/main.js",
-    "build": "vue-cli-service build --target lib --name vuetable-3 src/index.js"
+    "build": "vue-cli-service build --target lib --name table-vue2 src/index.js"
   },
   "dependencies": {
     "axios": "^0.27.2",

@@ -1,14 +1,4 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["vuetable-3"] = factory();
-	else
-		root["vuetable-3"] = factory();
-})((typeof self !== 'undefined' ? self : this), function() {
-return /******/ (function() { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 679:
@@ -2996,7 +2986,7 @@ var VuetableColGuttervue_type_template_id_615dafa7_staticRenderFns = []
 
 ;// CONCATENATED MODULE: ./src/components/VuetableColGutter.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_VuetableColGuttervue_type_script_lang_js_ = (VuetableColGuttervue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-52.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-52.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-52.use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VuetableColGutter.vue?vue&type=style&index=0&id=615dafa7&prod&lang=css&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VuetableColGutter.vue?vue&type=style&index=0&id=615dafa7&prod&lang=css&
 // extracted by mini-css-extract-plugin
 
 ;// CONCATENATED MODULE: ./src/components/VuetableColGutter.vue?vue&type=style&index=0&id=615dafa7&prod&lang=css&
@@ -4433,7 +4423,7 @@ var VuetableColGroup_component = normalizeComponent(
 
 ;// CONCATENATED MODULE: ./src/components/Vuetable.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_Vuetablevue_type_script_lang_js_ = (Vuetablevue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-52.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-52.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-52.use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/Vuetable.vue?vue&type=style&index=0&id=0c70e2b7&prod&lang=css&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/Vuetable.vue?vue&type=style&index=0&id=0c70e2b7&prod&lang=css&
 // extracted by mini-css-extract-plugin
 
 ;// CONCATENATED MODULE: ./src/components/Vuetable.vue?vue&type=style&index=0&id=0c70e2b7&prod&lang=css&
@@ -4695,7 +4685,7 @@ var VuetablePaginationvue_type_template_id_0f7faeb0_staticRenderFns = []
 
 ;// CONCATENATED MODULE: ./src/components/VuetablePagination.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_VuetablePaginationvue_type_script_lang_js_ = (VuetablePaginationvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-52.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-52.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-52.use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VuetablePagination.vue?vue&type=style&index=0&id=0f7faeb0&prod&lang=css&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VuetablePagination.vue?vue&type=style&index=0&id=0f7faeb0&prod&lang=css&
 // extracted by mini-css-extract-plugin
 
 ;// CONCATENATED MODULE: ./src/components/VuetablePagination.vue?vue&type=style&index=0&id=0f7faeb0&prod&lang=css&
@@ -4791,7 +4781,7 @@ var VuetablePaginationInfovue_type_template_id_27c8baec_staticRenderFns = []
 
 ;// CONCATENATED MODULE: ./src/components/VuetablePaginationInfo.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_VuetablePaginationInfovue_type_script_lang_js_ = (VuetablePaginationInfovue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-52.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-52.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-52.use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VuetablePaginationInfo.vue?vue&type=style&index=0&id=27c8baec&prod&lang=css&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VuetablePaginationInfo.vue?vue&type=style&index=0&id=27c8baec&prod&lang=css&
 // extracted by mini-css-extract-plugin
 
 ;// CONCATENATED MODULE: ./src/components/VuetablePaginationInfo.vue?vue&type=style&index=0&id=27c8baec&prod&lang=css&
@@ -5198,8 +5188,7 @@ function install(Vue) {
 
 
 }();
-/******/ 	return __webpack_exports__;
+module.exports = __webpack_exports__;
 /******/ })()
 ;
-});
-//# sourceMappingURL=vuetable-3.umd.js.map
+//# sourceMappingURL=table-vue2.common.js.map
