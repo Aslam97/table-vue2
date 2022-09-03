@@ -1,6 +1,6 @@
 {
   "name": "table-vue2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Datatable component for Vue 2.x",
   "main": "dist/table-vue2.common.js",
   "license": "MIT",
