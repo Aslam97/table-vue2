@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "dev": "vue-cli-service serve try/main.js",
-    "build": "vue-cli-service build --target lib --name table-vue2 src/index.js"
+    "build": "vue-cli-service build --target lib src/index.js"
   },
   "dependencies": {
     "axios": "^0.27.2",
