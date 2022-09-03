@@ -29,3 +29,7 @@ export default {
     <Vuetable :api-mode="false" :fields="fields" :data="data" />
   </div>
 </template>
+
+<style>
+@import 'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css';
+</style>
